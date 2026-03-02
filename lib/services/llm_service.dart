@@ -3,9 +3,10 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class LlmService {
-  static const String apiKey = String.fromEnvironment('OPENAI_API_KEY');
+  static String get apiKey => dotenv.env['OPENAI_API_KEY'] ?? '';
   static const String chatApiUrl = 'https://api.openai.com/v1/chat/completions';
   static const String whisperApiUrl = 'https://api.openai.com/v1/audio/transcriptions';
 
