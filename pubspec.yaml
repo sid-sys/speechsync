@@ -1,0 +1,34 @@
+name: speechsync
+description: "SpeechSync - Voice-to-text with AI tone and translation tools."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.5
+  shared_preferences: ^2.3.5
+  record: ^6.2.0
+  path_provider: ^2.1.3
+  permission_handler: ^12.0.1
+  http: ^1.6.0
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  pdf: ^3.11.3
+  file_picker: ^10.3.10
+  intl: ^0.20.2
+  open_filex: ^4.7.0
+  http_parser: ^4.0.2
+  speech_to_text: ^7.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
